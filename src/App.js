@@ -22,7 +22,7 @@ function App() {
   const LOCAL_STORAGE_KEY = "contacts"
   const [contacts, setContacts] = useState([]);
   const addContactHandler = (contact) =>{
-    setContacts([...contacts, {id:uuid(),...contacts}]);
+    setContacts([...contacts, {id: uuid, ...contact }]);
   }
 
   const removeContactHandler = (id) => {
